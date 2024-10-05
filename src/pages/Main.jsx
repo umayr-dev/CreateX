@@ -6,6 +6,9 @@ import Courses from './Courses'
 import Events from './Events'
 import Blogs from './Blogs'
 import Contacts from './Contacts'
+import NotFound from './NotFound'
+import Login from './Login'
+import Register from './Register'
 
 function Main() {
   return (
@@ -17,7 +20,11 @@ function Main() {
             <Route path='/events' element={<Events />}/>
             <Route path='/blogs' element={<Blogs />}/>
             <Route path='/contacts' element={<Contacts />}/>
+            <Route path='/*' element={<NotFound />}/>
+            <Route path='/login' element={<Login />}/>
+            <Route path='/register' element={<Register />}/>
 
+            
 
         </Routes>
     </main>
