@@ -1,8 +1,15 @@
 import React from 'react'
+import Header from './components/header'
+import Main from './pages/Main'
+import Footer from './components/footer'
 
 function App() {
   return (
-    <div>App</div>
+    <>
+    <Header/>
+    <Main/>
+    <Footer/>
+    </>
   )
 }
 
