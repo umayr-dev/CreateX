@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/header'
+import Header from './components/Header'
 import Main from './pages/Main'
 import Footer from './components/footer'
 
@@ -8,8 +8,9 @@ function App() {
     <>
     <Header/>
     <Main/>
-    <Footer/>
+    <Footer />
     </>
+    
   )
 }
 
