@@ -8,7 +8,6 @@ function HomePage() {
     <main>
         <Banner/>
         <AdvantageBanner/>
-        <FooterTop/>
     </main>
   )
 }
