@@ -1,9 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 function Header() {
+  const location = useLocation()
+  const [headerClassname, setHeaderClassName] = useState('')
+  useEffect(() => {
+    if(location.pathname !== '/'){
+      setHeaderClassName('header-white')
+    }else{
+      setHeaderClassName('')
+    }
+  }, [location])
+
   return (
-    <header>
+    <header className={headerClassname}>
       <div className="container">
         <div className="header">
           <div className="header-navbar">

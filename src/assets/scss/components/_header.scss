@@ -9,6 +9,10 @@ header{
     justify-content: space-between;
     background-color: transparent;
 
+    &-white{
+        background-color: #fff;
+    }
+
     &-navbar{
         width: 60%;
         height: 100%;
